@@ -1,0 +1,46 @@
+<svg width="480" height="360" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="minimal geometric composition">
+  <style>
+    :root{ --card:#f8fafc; --border:#e2e8f0; --accent:#2563eb; --soft:#dbeafe; --muted:#94a3b8; }
+    @media (prefers-color-scheme: dark){
+      :root{ --card:#10151f; --border:#1f2937; --accent:#60a5fa; --soft:#1e3a5f; --muted:#5b6b85; }
+    }
+    .float{ animation: ms-float 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .f1{ animation-delay:0s }
+    .f2{ animation-delay:1.1s }
+    .f3{ animation-delay:2.2s }
+    .f4{ animation-delay:.6s }
+    @keyframes ms-float{
+      0%,100%{ transform: translateY(0px); }
+      50%{ transform: translateY(-10px); }
+    }
+    .spin{ animation: ms-spin 14s linear infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes ms-spin{ to{ transform: rotate(360deg); } }
+  </style>
+
+  <rect x="0.75" y="0.75" width="478.5" height="358.5" rx="24" fill="var(--card)" stroke="var(--border)" stroke-width="1.5" />
+
+  <g class="float f1">
+    <circle cx="120" cy="110" r="34" fill="var(--soft)" />
+    <circle cx="120" cy="110" r="34" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".5" />
+  </g>
+
+  <g class="spin">
+    <rect x="290" y="70" width="64" height="64" rx="18" fill="none" stroke="var(--accent)" stroke-width="1.5" />
+  </g>
+
+  <g class="float f2">
+    <circle cx="330" cy="230" r="26" fill="none" stroke="var(--muted)" stroke-width="1.5" />
+    <circle cx="330" cy="230" r="4" fill="var(--accent)" />
+  </g>
+
+  <g class="float f3">
+    <path d="M90 250 L128 250 L109 216 Z" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" />
+  </g>
+
+  <g class="float f4">
+    <rect x="200" y="270" width="46" height="46" rx="10" fill="var(--soft)" opacity=".7" />
+  </g>
+
+  <line x1="154" y1="120" x2="288" y2="98" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 5" />
+  <line x1="322" y1="134" x2="336" y2="204" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 5" />
+</svg>

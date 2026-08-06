@@ -1,0 +1,52 @@
+<svg width="480" height="340" viewBox="0 0 480 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="abstract code editor illustration">
+  <style>
+    :root{
+      --window:#ffffff; --bar:#f8fafc; --border:#e2e8f0; --muted:#cbd5e1;
+      --accent:#2563eb; --soft:#dbeafe; --text:#94a3b8;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --window:#10151f; --bar:#151b28; --border:#1f2937; --muted:#2a3346;
+        --accent:#60a5fa; --soft:#1e3a5f; --text:#3d4a63;
+      }
+    }
+    .cursor{ animation: c-blink 1.1s steps(1) infinite; }
+    @keyframes c-blink{ 0%,49%{ opacity:1 } 50%,100%{ opacity:0 } }
+    .grow{ transform-box: fill-box; transform-origin: left; animation: c-grow 3.2s ease-in-out infinite; }
+    @keyframes c-grow{ 0%,100%{ transform: scaleX(1); } 50%{ transform: scaleX(.94); } }
+  </style>
+
+  <rect x="0.75" y="0.75" width="478.5" height="338.5" rx="20" fill="var(--window)" stroke="var(--border)" stroke-width="1.5" />
+
+  <path d="M0 40 H480" stroke="var(--border)" stroke-width="1.5" />
+  <rect x="0.75" y="0.75" width="478.5" height="39" rx="20" fill="var(--bar)" />
+  <rect x="0.75" y="20" width="478.5" height="20.5" fill="var(--bar)" />
+
+  <circle cx="26" cy="20" r="4.5" fill="var(--muted)" />
+  <circle cx="42" cy="20" r="4.5" fill="var(--muted)" />
+  <circle cx="58" cy="20" r="4.5" fill="var(--muted)" />
+
+  <g>
+    <rect class="grow" x="40" y="76" width="120" height="8" rx="4" fill="var(--accent)" />
+    <rect class="grow" x="40" y="100" width="70" height="8" rx="4" fill="var(--text)" />
+
+    <rect class="grow" x="66" y="128" width="150" height="8" rx="4" fill="var(--text)" />
+    <rect class="grow" x="66" y="152" width="96" height="8" rx="4" fill="var(--soft)" />
+    <rect class="grow" x="66" y="176" width="120" height="8" rx="4" fill="var(--text)" />
+
+    <rect class="grow" x="40" y="204" width="40" height="8" rx="4" fill="var(--accent)" />
+
+    <rect class="grow" x="40" y="232" width="180" height="8" rx="4" fill="var(--text)" />
+    <rect class="grow" x="40" y="256" width="60" height="8" rx="4" fill="var(--text)" />
+
+    <rect class="cursor" x="104" y="255" width="8" height="10" fill="var(--accent)" />
+  </g>
+
+  <g opacity=".7">
+    <rect x="280" y="76" width="160" height="188" rx="14" fill="none" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 5" />
+    <circle cx="360" cy="150" r="22" fill="var(--soft)" />
+    <circle cx="360" cy="150" r="22" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".5" />
+    <rect x="316" y="200" width="88" height="8" rx="4" fill="var(--muted)" />
+    <rect x="316" y="222" width="60" height="8" rx="4" fill="var(--muted)" />
+  </g>
+</svg>
