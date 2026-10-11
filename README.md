@@ -50,14 +50,14 @@
   <tr>
     <td width="50%" align="center">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=IliaEs19&show_icons=true&count_private=true&title_color=38bdf8&icon_color=38bdf8&text_color=94a3b8&bg_color=0f172a&border_color=1d4ed8&border_radius=20&hide_border=false" />
-        <img src="https://github-stats-extended.vercel.app/api?username=IliaEs19&show_icons=true&count_private=true&title_color=1d4ed8&icon_color=0ea5e9&text_color=475569&bg_color=ffffff&border_color=bfdbfe&border_radius=20&hide_border=false" width="100%" alt="GitHub stats" />
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg" />
+        <img src="./profile/stats-light.svg" width="100%" alt="GitHub stats" />
       </picture>
     </td>
     <td width="50%" align="center">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api/top-langs/?username=IliaEs19&layout=compact&langs_count=8&title_color=38bdf8&text_color=94a3b8&bg_color=0f172a&border_color=1d4ed8&border_radius=20&hide_border=false" />
-        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=IliaEs19&layout=compact&langs_count=8&title_color=1d4ed8&text_color=475569&bg_color=ffffff&border_color=bfdbfe&border_radius=20&hide_border=false" width="100%" alt="Top languages" />
+        <source media="(prefers-color-scheme: dark)" srcset="./profile/top-langs-dark.svg" />
+        <img src="./profile/top-langs-light.svg" width="100%" alt="Top languages" />
       </picture>
     </td>
   </tr>
